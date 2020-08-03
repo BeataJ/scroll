@@ -26,12 +26,18 @@ navToggle.addEventListener('click', () => {
   }
 });
 
-const navbar = document.querySelector('.nav');
-const topLink = document.querySelector('top-link');
+const navbar = document.getElementById('nav');
+const topLink = document.querySelector('.top-link');
 // ********** fixed navbar ************
 window.addEventListener('scroll', () => {
   const scrollHeight = window.pageYOffset;
   const navHeight = navbar.getBoundingClientRect().height;
+
+  if (scrollHeight > navHeight) {
+    navbar.classList.add('fixed-nav');
+  } else {
+    navbar.classList.remove('fixed-nav');
+  }
 });
 
 // ********** smooth scroll ************
