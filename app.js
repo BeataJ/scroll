@@ -26,7 +26,12 @@ navToggle.addEventListener('click', () => {
   }
 });
 
+const navbar = document.querySelector('.nav');
+const topLink = document.querySelector('top-link');
 // ********** fixed navbar ************
+window.addEventListener('scroll', () => {
+  console.log(window.pageYOffset);
+});
 
 // ********** smooth scroll ************
 // select links
