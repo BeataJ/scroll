@@ -47,4 +47,6 @@ window.addEventListener('scroll', () => {
 });
 
 // ********** smooth scroll ************
+const scrollLinks = document.querySelectorAll('.scroll-link');
+
 // select links
