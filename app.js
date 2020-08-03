@@ -38,6 +38,12 @@ window.addEventListener('scroll', () => {
   } else {
     navbar.classList.remove('fixed-nav');
   }
+
+  if (scrollHeight > 500) {
+    topLink.classList.add('show-link');
+  } else {
+    topLink.classList.remove('show-link');
+  }
 });
 
 // ********** smooth scroll ************
