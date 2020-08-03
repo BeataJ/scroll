@@ -30,7 +30,8 @@ const navbar = document.querySelector('.nav');
 const topLink = document.querySelector('top-link');
 // ********** fixed navbar ************
 window.addEventListener('scroll', () => {
-  console.log(window.pageYOffset);
+  const scrollHeight = window.pageYOffset;
+  const navHeight = navbar.getBoundingClientRect().height;
 });
 
 // ********** smooth scroll ************
