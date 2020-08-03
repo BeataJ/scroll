@@ -47,6 +47,14 @@ window.addEventListener('scroll', () => {
 });
 
 // ********** smooth scroll ************
+// select links
 const scrollLinks = document.querySelectorAll('.scroll-link');
 
-// select links
+scrollLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    // navigate to specific spot
+    const id = e.currentTarget.getAttribute('href').slice(1);
+    const element = document.getElementById(id);
+  });
+});
